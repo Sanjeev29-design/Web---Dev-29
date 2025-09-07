@@ -17,6 +17,7 @@
             <p>Bringing warmth and strength, with love as my power.</p>
             <button>Know More</button>
         </div>
+        
 
         <div class="image-wrapper">
             <img src="Images/b6f6d05888d9ea7e48c69acc60093cec.jpg" alt="Mitsuri" class="main-img">
@@ -50,7 +51,7 @@
    <div class="kanroji">
     <img src="Images/11d038abf3ba02a7ee5a80c7478aa1fe.jpg" class="k">
    </div>
-   <section class="about-mitsuri">
+   <section class="about-mitsuri" class="reveal">
     <h2>From Mitsuri 💖</h2>
     <p>
         Hello! My name is <strong>Mitsuri Kanroji</strong>, and I’m proud to be the 
@@ -62,6 +63,22 @@
     </p>
 </section>
 </main>
+<script>
+    const reveals = document.querySelectorAll(".reveal");
+
+    function revealOnScroll() {
+        const windowHeight = window.innerHeight;
+        reveals.forEach(el => {
+            const elementTop = el.getBoundingClientRect().top;
+            if (elementTop < windowHeight - 100) {
+                el.classList.add("active");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
+</script>
 
 </body>
 
