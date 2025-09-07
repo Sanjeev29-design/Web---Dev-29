@@ -1,0 +1,186 @@
+/* General body and HTML setup */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Flexbox container for the entire page layout */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffd6e0, #ffe9f0); /* Apply background to the whole page */
+}
+
+/* Header styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 80px;
+    background: linear-gradient(135deg, #ffd6e0, #ffe9f0); /* Header has its own gradient */
+    flex-shrink: 0; /* Prevents the header from shrinking */
+}
+
+/* Text section */
+.header-text {
+    max-width: 550px;
+    margin-top: -40px;
+}
+
+header h1 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #3a0d23;
+    margin-bottom: 20px;
+}
+
+header h1 span {
+    color: #ff4d88;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 15px 0 30px;
+    color: #4a1c2f;
+}
+
+/* Fancy button */
+header button {
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #ff5d8f, #ff85a2);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(255, 93, 143, 0.4);
+    transition: all 0.3s ease;
+}
+
+header button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 93, 143, 0.5);
+}
+
+/* Main image wrapper */
+.image-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+/* Main image */
+.image-wrapper .main-img {
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top center;
+    border: 10px solid white;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Side images */
+.image-wrapper .side-img {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top center;
+    border: 6px solid white;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Left small image */
+.image-wrapper .left {
+    left: -60px;
+    top: 55%;
+    transform: translateY(-50%);
+}
+
+/* Right small image */
+.image-wrapper .right {
+    right: -60px;
+    top: 45%;
+    transform: translateY(-50%);
+}
+
+/* Main content section */
+main {
+    padding: 60px 80px;
+    color: #4a1c2f;
+    flex-grow: 1; /* This is the key change. `flex-grow: 1` makes the main content take up all remaining vertical space. */
+}
+
+main h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ff4d6d;
+}
+
+footer {
+    /* Optional: Add footer styles here if needed */
+}
+
+/* Main section general */
+main {
+    padding: 60px 80px;
+    color: #4a1c2f;
+    line-height: 1.7;
+}
+
+/* Section headings */
+main h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ff4d6d;
+}
+
+/* Facts list */
+.facts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.facts li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Quote section */
+.quote {
+    margin-top: 40px;
+    padding: 20px;
+    background: #ffe9f0;
+    border-left: 6px solid #ff4d6d;
+    border-radius: 10px;
+    font-style: italic;
+}
+
+.k{
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top center;
+    border: 10px solid white;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25)
+    ;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+}
+
+.about-mitsuri{
+
+}
